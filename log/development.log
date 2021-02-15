@@ -24449,3 +24449,5 @@ Completed 200 OK in 17ms (Views: 6.1ms | ActiveRecord: 1.7ms | Allocations: 6306
 Completed 200 OK in 1292ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 8289)
 
 
+  [1m[35m (267.9ms)[0m  [1m[35mCREATE DATABASE "tarot_daily_development" ENCODING = 'utf8'[0m
+  [1m[35m (106.1ms)[0m  [1m[35mCREATE DATABASE "tarot_daily_test" ENCODING = 'utf8'[0m
