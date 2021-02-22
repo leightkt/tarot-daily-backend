@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_02_07_224843) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cards", force: :cascade do |t|
     t.string "name"
     t.string "name_short"
@@ -29,8 +32,8 @@ ActiveRecord::Schema.define(version: 2021_02_07_224843) do
   create_table "readings", force: :cascade do |t|
     t.string "date"
     t.string "question"
-    t.integer "user_id", null: false
-    t.integer "card_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "card_id", null: false
     t.string "direction"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
